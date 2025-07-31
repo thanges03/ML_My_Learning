@@ -6,7 +6,7 @@ from sklearn import svm
 from sklearn.metrics import accuracy_score
 
 # Load dataset
-df = pd.read_csv('D:/ml/parkinson.csv')
+df = pd.read_csv('#Dataset_path')
 
 # Separate features and target
 x = df.drop(columns=['name', 'status'], axis=1)
