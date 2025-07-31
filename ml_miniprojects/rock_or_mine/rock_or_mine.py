@@ -3,7 +3,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-sonar_data = pd.read_csv('/content/sonar_data.csv',header=None)
+
+#load dataset
+sonar_data = pd.read_csv('/data setpath',header=None)
 x = sonar_data.drop(columns=60,axis=1)
 y= sonar_data[60]
 print(sonar_data.head())
